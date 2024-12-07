@@ -125,30 +125,43 @@ h1, h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Ramki dla sekcji */
-.file-section {
-    margin-bottom: 20px;
-    background: rgba(0, 0, 0, 0.5);
+/* Sekcja archiwum plików */
+.archive {
+    margin-top: 20px;
     padding: 15px;
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
     border: 2px dashed #FFCC00;
+    border-radius: 10px;
 }
 
-.file-section ul {
-    list-style: none;
+.archive h2 {
+    text-align: center;
+    color: #FFCC00;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.archive ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.file-section li {
-    margin: 10px 0;
+.archive li {
+    margin-bottom: 10px;
 }
 
-.file-section a {
+.archive a {
+    display: inline-block;
     color: #FFCC00;
+    background-color: #444444;
+    padding: 10px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.file-section a:hover {
-    color: #FF8C00;
+.archive a:hover {
+    background-color: #FF8C00;
 }
