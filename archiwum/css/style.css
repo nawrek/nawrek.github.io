@@ -27,7 +27,7 @@ header {
 /* Kontener na treść strony */
 .container {
     margin-top: 60px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
-    padding: 20px;
+    padding: 0px;
     width: 100%;
     max-width: calc(100% - 270px); /* Zostawiamy miejsce na sidebar */
     background-color: white;
