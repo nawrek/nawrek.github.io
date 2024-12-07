@@ -34,7 +34,9 @@ header {
     padding: 20px;
     width: 100%;
     max-width: calc(100% - 270px); /* Zostawiamy miejsce na sidebar */
-    background-color: white;
+    background-image: url('https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.4/assets/minecraft/textures/block/dirt.png'); /* Ścieżka do obrazka */
+    background-repeat: repeat; /* Zapętlamy obrazek zarówno w poziomie, jak i w pionie */
+    background-size: cover; /* Opcjonalnie można ustawić 'cover' jeśli chcesz, aby tło wypełniało całą stronę */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     height: calc(100% - 60px); /* Wysokość kontenera strony minus wysokość nagłówka */
