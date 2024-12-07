@@ -16,22 +16,6 @@ header {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Przycisk do ukrywania sidebaru */
-.toggle-btn {
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 
 /* Sidebar */
@@ -46,22 +30,16 @@ header {
     right: 0; /* Sidebar po prawej stronie */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
-    transition: transform 0.3s ease; /* Płynna animacja */
-}
-
-/* Ukrywanie sidebaru */
-.sidebar.hidden {
-    transform: translateX(100%); /* Przesunięcie sidebaru na prawo */
 }
 
 /* Stylowanie nagłówków kategorii w sidebarze */
 .sidebar h3 {
     font-size: 1.2em;
     margin-top: 0;
-    cursor: pointer;
+    cursor: pointer; /* Zmieniamy kursor na "rączkę" dla interakcji */
     padding-bottom: 10px;
     margin-bottom: 5px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #444; /* Dodanie linii pod kategorią */
 }
 
 /* Lista kategorii w sidebarze */
@@ -79,12 +57,12 @@ header {
     color: white;
     text-decoration: none;
     padding: 5px 0;
-    display: block;
+    display: block; /* Aby linki były blokami */
 }
 
 /* Zwiększenie czcionki i pogrubienie kategorii */
 .sidebar li > a {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Większa czcionka dla kategorii */
     font-weight: bold;
     margin-top: 10px;
     padding-left: 5px;
@@ -92,16 +70,16 @@ header {
 
 /* Stylowanie plików w tych kategoriach */
 .sidebar li > ul li a {
-    font-size: 1em;
+    font-size: 1em; /* Czcionka plików mniejsza niż kategorii */
     font-weight: normal;
-    padding-left: 15px;
+    padding-left: 15px; /* Wcięcie dla plików */
     padding-bottom: 5px;
 }
 
 /* Wcięcie dla podkategorii */
 .sidebar li > ul {
-    margin-left: 15px;
-    padding-left: 5px;
+    margin-left: 15px; /* Wcięcie dla podkategorii */
+    padding-left: 5px; /* Wcięcie dla podkategorii */
 }
 
 /* Ukrywanie kategorii */
@@ -116,7 +94,7 @@ header {
 
 /* Kontener na treść strony */
 .container {
-    margin-right: 270px;
+    margin-right: 270px; /* Daje miejsce na sidebar */
     padding: 20px;
     width: calc(100% - 270px);
     background-color: white;
@@ -135,4 +113,19 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Linki do pobrania */
+.download-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+/* Stylowanie przycisku aktywnej podstrony w sidebarze */
+.sidebar a.active {
+    font-weight: bold;
 }
