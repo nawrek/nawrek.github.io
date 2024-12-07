@@ -25,8 +25,7 @@ header {
 
 /* Kontener na treść strony */
 .container {
-    margin-top: 60px; /* Dodajemy margines, aby treść nie nakładała się na nagłówek */
-    margin-right: 0; /* Usuwamy margin-right, aby treść nie była za szeroka */
+    margin-top: 80px; /* Dodajemy większy margines, aby treść nie nakładała się na nagłówek */
     padding: 20px;
     width: 100%; /* Treść strony ma teraz pełną szerokość */
     max-width: calc(100% - 270px); /* W przypadku sidebaru, treść ma miejsce na sidebar */
@@ -50,6 +49,7 @@ header {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     transition: transform 0.3s ease;
+    z-index: 999; /* Sidebar poniżej nagłówka */
 }
 
 /* Ukrywanie sidebaru */
