@@ -20,7 +20,8 @@ header {
     position: fixed; /* Ustawiamy nagłówek na stałe na górze */
     top: 0; /* Nagłówek znajduje się na samej górze */
     left: 0;
-    z-index: 1000; /* Zwiększamy z-index, aby nagłówek był nad resztą strony */
+    z-index: 1100; /* Zwiększamy z-index, aby nagłówek był nad resztą strony */
+    width: 100%;
 }
 
 /* Kontener na treść strony */
@@ -49,7 +50,7 @@ header {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     transition: transform 0.3s ease;
-    z-index: 999; /* Sidebar poniżej nagłówka */
+    z-index: 1000; /* Sidebar poniżej nagłówka, ale nad treścią */
 }
 
 /* Ukrywanie sidebaru */
