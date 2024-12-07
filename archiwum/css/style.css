@@ -17,23 +17,23 @@ header {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: static; /* Zmieniamy na static, aby nie zakrywał innych elementów */
+    position: fixed; /* Nagłówek jest przyklejony do góry */
     top: 0;
     left: 0;
-    z-index: 1100; /* Zwiększamy z-index, aby nagłówek był nad resztą strony */
+    z-index: 1100; /* Nagłówek ma być nad wszystkim */
     height: 50px; /* Ustawiamy wysokość nagłówka na 50px */
 }
 
 /* Kontener na treść strony */
 .container {
-    margin-top: 50px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
+    margin-top: 60px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
     padding: 20px;
     width: 100%;
-    max-width: calc(100% - 270px); /* Dostosowanie szerokości kontenera na treść z uwzględnieniem sidebaru */
+    max-width: calc(100% - 270px); /* Zostawiamy miejsce na sidebar */
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    height: calc(100% - 50px); /* Zapewniamy, że kontener nie nachodzi na nagłówek */
+    height: calc(100% - 60px); /* Kontener ma pełną wysokość minus wysokość nagłówka */
     overflow-y: auto;
 }
 
@@ -44,12 +44,12 @@ header {
     width: 250px;
     padding: 15px;
     position: fixed;
-    top: 50px; /* Sidebar ma zaczynać się poniżej nagłówka */
+    top: 50px; /* Sidebar zaczyna się 50px poniżej nagłówka */
     right: 0; /* Sidebar po prawej stronie */
-    height: calc(100% - 50px); /* Sidebar ma pełną wysokość strony minus wysokość nagłówka */
+    height: calc(100% - 50px); /* Sidebar rozciąga się od 50px poniżej nagłówka do dołu ekranu */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
-    z-index: 1000; /* Sidebar ma być poniżej nagłówka, ale nad treścią */
+    z-index: 1000; /* Sidebar jest poniżej nagłówka, ale nad resztą treści */
 }
 
 /* Ukrywanie sidebaru */
