@@ -27,14 +27,14 @@ header {
 
 /* Kontener na treść strony */
 .container {
-    margin-top: 80px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
+    margin-top: 100px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
     padding: 20px;
     width: 100%;
     max-width: calc(100% - 270px); /* Dostosowanie szerokości kontenera na treść z uwzględnieniem sidebaru */
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    height: calc(100% - 60px); /* Zapewniamy, że kontener nie nachodzi na nagłówek */
+    height: calc(100% - 100px); /* Zapewniamy, że kontener nie nachodzi na nagłówek */
     overflow-y: auto;
 }
 
@@ -45,9 +45,9 @@ header {
     width: 250px;
     padding: 15px;
     position: fixed;
-    height: 100%; /* Sidebar ma teraz pełną wysokość */
-    top: 60px; /* Przesuwamy sidebar w dół, aby zaczynał się poniżej nagłówka */
+    top: 60px; /* Sidebar ma zaczynać się 60px poniżej nagłówka */
     right: 0; /* Sidebar po prawej stronie */
+    height: calc(100% - 60px); /* Sidebar ma pełną wysokość strony minus wysokość nagłówka */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     z-index: 1000; /* Sidebar ma być poniżej nagłówka, ale nad treścią */
