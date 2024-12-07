@@ -40,6 +40,19 @@ header .logo {
     padding: 10px 0; /* Odstępy od góry i dołu */
 }
 
+header a {
+    text-decoration: none; /* Usuń podkreślenie linku */
+    display: block; /* Umożliwia kliknięcie na cały obszar obrazka */
+}
+
+header a .logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
 /* Kontener na treść strony */
 .container {
     margin-top: 60px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
