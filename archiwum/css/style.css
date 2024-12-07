@@ -91,7 +91,7 @@ header .logo:hover {
 .sidebar ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .sidebar li {
