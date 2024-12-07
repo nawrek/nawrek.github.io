@@ -1,7 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiwum Plików</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #0000ff, #ffffff);
+            font-family: "Comic Sans MS", sans-serif;
+            color: #000000;
+            text-align: center;
+        }
+        h1 {
+            color: #ff0000;
+            text-shadow: 2px 2px #ffff00;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .file-list {
+            border: 3px dashed #ff00ff;
+            padding: 10px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #ffffff;
+        }
+        a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff00ff;
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888888;
+        }
+        .gif {
+            margin-top: 20px;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <h1>Witaj w moim Archiwum Plików!</h1>
+    <marquee behavior="scroll" direction="left" scrollamount="10" style="color: #00ff00;">Pobierz pliki, które chcesz, za darmo!</marquee>
+    <div class="file-list">
+        <h2>Pliki do pobrania:</h2>
+        <ul>
+            <li><a href="file1.zip">file1.zip</a></li>
+            <li><a href="file2.pdf">file2.pdf</a></li>
+            <li><a href="file3.docx">file3.docx</a></li>
+            <li><a href="file4.mp3">file4.mp3</a></li>
+        </ul>
+    </div>
+    <div class="gif">
+        <img src="https://media.giphy.com/media/3o6ZsYm5v1x7P83B9C/giphy.gif" alt="Dancing Gif">
+    </div>
+    <div class="footer">
+        &copy; 2024 Moje Archiwum Plików. Wszystkie prawa zastrzeżone.
+    </div>
 </body>
 </html>
