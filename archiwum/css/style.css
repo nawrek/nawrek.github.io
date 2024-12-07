@@ -72,7 +72,7 @@ header {
     border-bottom: 1px solid #444;
 }
 
-/* Lista kategorii w sidebarze */
+/* Lista kategorii w sidebarie */
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -120,6 +120,38 @@ header {
 /* Animacja rozwijania */
 .sidebar ul li {
     transition: all 0.3s ease;
+}
+
+/* Przyciski w sidebarze */
+.author-btn {
+    background-color: #0066cc; /* Kolor tła przycisku */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%; /* Przyciągamy przycisk do szerokości sidebaru */
+    font-size: 1.2em;
+}
+
+/* Stylowanie przycisku na hover */
+.author-btn:hover {
+    background-color: #005bb5; /* Zmiana koloru tła na hover */
+}
+
+/* Utrzymanie przycisku na dole sidebaru */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* Utrzymanie przycisku na dole */
+.sidebar button:last-child {
+    margin-top: auto; /* Zajmuje pozostałą przestrzeń, przesuwając przycisk na dół */
 }
 
 /* Stopka */
