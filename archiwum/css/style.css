@@ -27,7 +27,7 @@ header {
 
 /* Kontener na treść strony */
 .container {
-    margin-top: 70px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
+    margin-top: 50px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
     padding: 20px;
     width: 100%;
     max-width: calc(100% - 270px); /* Dostosowanie szerokości kontenera na treść z uwzględnieniem sidebaru */
