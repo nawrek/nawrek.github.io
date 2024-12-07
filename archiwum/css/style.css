@@ -2,9 +2,10 @@
 body {
     font-family: 'Verdana', sans-serif;
     background-color: #f0f0f0;
-    background-image: url('https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.4/assets/minecraft/textures/block/dirt.png'); /* Ścieżka do obrazka */
-    background-repeat: repeat; /* Zapętlamy obrazek zarówno w poziomie, jak i w pionie */
+    background-image: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Dirt_background_JE2.png'); /* Ścieżka do obrazka */
+    background-repeat: no-repeat; /* Zapętlamy obrazek zarówno w poziomie, jak i w pionie */
     background-size: cover; /* Opcjonalnie można ustawić 'cover' jeśli chcesz, aby tło wypełniało całą stronę */
+    background-position: center center;
     margin: 0;
     padding: 0;
     color: #000;
