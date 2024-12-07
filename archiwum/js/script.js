@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleButtons = document.querySelectorAll('.toggle-category'); // Wybieramy wszystkie nagłówki kategorii
+    // Wybieramy wszystkie nagłówki kategorii
+    const toggleButtons = document.querySelectorAll('.toggle-category');
 
+    // Dodajemy nasłuchiwacz na kliknięcie dla każdego nagłówka kategorii
     toggleButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             const categoryList = this.nextElementSibling; // Lista plików, która jest następnym elementem po nagłówku
