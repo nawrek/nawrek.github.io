@@ -40,6 +40,10 @@ header .logo {
     padding: 10px 0;
 }
 
+header .logo:hover {
+    cursor: pointer; /* Zmienia kursor na rękę */
+}
+
 /* Kontener na treść strony */
 .container {
     margin-top: 60px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
