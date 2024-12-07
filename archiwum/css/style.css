@@ -44,8 +44,8 @@ header {
     width: 250px;
     padding: 15px;
     position: fixed;
-    height: 100%;
-    top: 0;
+    height: calc(100% - 60px); /* Ustawiamy wysokość sidebaru na 100% minus wysokość nagłówka */
+    top: 60px; /* Przesuwamy sidebar w dół, poniżej nagłówka */
     right: 0; /* Sidebar po prawej stronie */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
