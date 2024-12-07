@@ -45,7 +45,7 @@ header {
     width: 250px;
     padding: 15px;
     position: fixed;
-    top: 40px; /* Sidebar ma zaczynać się 60px poniżej nagłówka */
+    top: 60px; /* Sidebar ma zaczynać się 60px poniżej nagłówka */
     right: 0; /* Sidebar po prawej stronie */
     height: calc(100% - 60px); /* Sidebar ma pełną wysokość strony minus wysokość nagłówka */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
