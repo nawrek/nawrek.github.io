@@ -3,64 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archiwum plików retro</title>
+    <title>Archiwum Map i Plików</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Nagłówek -->
+    <header>
+        <h1>Archiwum Map i Plików</h1>
+        <button id="toggle-sidebar" class="toggle-btn">☰</button> <!-- Przycisk do ukrywania/pokazywania sidebaru -->
+    </header>
 
-<header>
-    <h1>Archiwum plików retro (2006)</h1>
-</header>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <h3>Texture Packi</h3>
+        <ul>
+            <li><a href="#">Texture Pack 1</a></li>
+            <li><a href="#">Texture Pack 2</a></li>
+        </ul>
 
-<!-- Sidebar po prawej stronie -->
-<div class="sidebar">
-    <h3 class="toggle-category">Texture Packi</h3>
-    <ul class="hidden">
-        <li><a href="files/texture_pack1.zip" class="download-link">Texture Pack 1 (zip)</a></li>
-        <li><a href="files/texture_pack2.zip" class="download-link">Texture Pack 2 (zip)</a></li>
-    </ul>
+        <h3>Mapy</h3>
+        <ul>
+            <li><a href="#" class="category-toggle">Bremu (3)</a>
+                <ul class="hidden">
+                    <li><a href="#">Bremu Map 1</a></li>
+                    <li><a href="#">Bremu Map 2</a></li>
+                    <li><a href="#">Bremu Map 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="category-toggle">Madzik98 (2)</a>
+                <ul class="hidden">
+                    <li><a href="#">Madzik98 Map 1</a></li>
+                    <li><a href="#">Madzik98 Map 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="category-toggle">Inne mapki (4)</a>
+                <ul class="hidden">
+                    <li><a href="#">Inna Mapka 1</a></li>
+                    <li><a href="#">Inna Mapka 2</a></li>
+                    <li><a href="#">Inna Mapka 3</a></li>
+                    <li><a href="#">Inna Mapka 4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-    <h3 class="toggle-category">Mapy</h3>
-    <ul class="hidden">
-        <li><a href="#" class="toggle-category">Bremu</a>
-            <ul class="hidden">
-                <li><a href="files/bremu_mapka1.zip" class="download-link">Mapka 1 (zip)</a></li>
-                <li><a href="files/bremu_mapka2.rar" class="download-link">Mapka 2 (rar)</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="toggle-category">Madzik98</a>
-            <ul class="hidden">
-                <li><a href="files/madzik98_mapka1.zip" class="download-link">Mapka 1 (zip)</a></li>
-                <li><a href="files/madzik98_mapka2.rar" class="download-link">Mapka 2 (rar)</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="toggle-category">Inne mapki</a>
-            <ul class="hidden">
-                <li><a href="files/mapka1.zip" class="download-link">Mapka 1 (zip)</a></li>
-                <li><a href="files/mapka2.zip" class="download-link">Mapka 2 (zip)</a></li>
-                <li><a href="files/mapka3.rar" class="download-link">Mapka 3 (rar)</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
+    <!-- Treść strony -->
+    <div class="container">
+        <h2>Witaj w archiwum plików</h2>
+        <p>Wybierz mapę lub plik z lewej strony, aby go pobrać.</p>
+    </div>
 
-<!-- Kontener z treścią strony -->
-<div class="container">
-    <h2>Witaj w archiwum plików!</h2>
-    <p>Na tej stronie znajdziesz różne pliki do pobrania z lat 2006 i wcześniejszych. Wybierz jedną z poniższych sekcji, aby przejść do interesujących Cię plików:</p>
-    <ul>
-        <li><a href="inne_mapki.html" class="download-link">Inne mapki</a></li>
-        <li><a href="madzik98.html" class="download-link">Madzik98</a></li>
-        <li><a href="bremu.html" class="download-link">Bremu</a></li>
-        <li><a href="texture_packi.html" class="download-link">Texture Packi</a></li>
-        <li><a href="mapy.html" class="download-link">Mapy</a></li>
-    </ul>
-</div>
+    <!-- Stopka -->
+    <footer>
+        <p>Archiwum plików - 2024</p>
+    </footer>
 
-<footer>
-    <p>&copy; 2024 Archiwum plików retro</p>
-</footer>
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
