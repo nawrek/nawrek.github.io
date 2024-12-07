@@ -15,13 +15,14 @@ header {
     background-color: #0066cc;
     color: white;
     text-align: center;
-    padding: 5px 0;
+    padding: 0; /* Ustawiamy padding na 0, żeby mieć pełną kontrolę nad wyrównaniem */
     width: 100%;
     position: fixed; /* Nagłówek przyklejony do góry */
     top: 0;
     left: 0;
     z-index: 1100; /* Nagłówek będzie zawsze nad innymi elementami */
     height: 50px; /* Wysokość nagłówka */
+    line-height: 50px; /* Wyśrodkowanie tekstu w pionie, pasuje do wysokości nagłówka */
 }
 
 /* Kontener na treść strony */
