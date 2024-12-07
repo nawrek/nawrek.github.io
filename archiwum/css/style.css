@@ -22,7 +22,7 @@ header {
     left: 0;
     z-index: 1100; /* Zwiększamy z-index, aby nagłówek był nad resztą strony */
     width: 100%;
-    height: 40px; /* Ustawiamy wysokość nagłówka na 50px */
+    height: 50px; /* Ustawiamy wysokość nagłówka na 50px */
 }
 
 /* Kontener na treść strony */
@@ -34,7 +34,7 @@ header {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    height: calc(100% - 70px); /* Zapewniamy, że kontener nie nachodzi na nagłówek */
+    height: calc(100% - 5g0px); /* Zapewniamy, że kontener nie nachodzi na nagłówek */
     overflow-y: auto;
 }
 
