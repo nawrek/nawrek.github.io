@@ -3,7 +3,7 @@ body {
     font-family: 'Verdana', sans-serif;
     background-color: #f0f0f0;
     background-image: url('https://raw.githubusercontent.com/nawrek/nawrek.github.io/refs/heads/main/archiwum/css/Dirt_background_BE1.png'); /* Ścieżka do obrazka */
-    background-repeat: no-repeat; /* Zapętlamy obrazek zarówno w poziomie, jak i w pionie */
+    background-repeat: repeat; /* Zapętlamy obrazek zarówno w poziomie, jak i w pionie */
     background-size: cover; /* Opcjonalnie można ustawić 'cover' jeśli chcesz, aby tło wypełniało całą stronę */
     background-position: center center;
     margin: 0;
@@ -11,7 +11,9 @@ body {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 97vh;
+    width: 200vh;
+    align-content: center;
 }
 
 /* Nagłówek */
