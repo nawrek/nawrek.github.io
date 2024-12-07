@@ -17,7 +17,7 @@ header {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: fixed; /* Ustawiamy nagłówek na stałe na górze */
+    position: static; /* Ustawiamy nagłówek na stałe na górze */
     top: 0;
     left: 0;
     z-index: 1100; /* Zwiększamy z-index, aby nagłówek był nad resztą strony */
