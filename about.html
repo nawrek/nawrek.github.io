@@ -13,12 +13,19 @@
     <nav class="navigation">
         <a href="index.html">Strona Główna</a>
     </nav>
-    <main class="content">
-        <h1>Kim jesteśmy?</h1>
-        <p>Jesteśmy zespołem pasjonatów technologii i archiwizacji, którzy udostępniają różnorodne pliki i informacje.</p>
-    </main>
+    <div class="container">
+        <nav class="sidebar">
+            <h3 class="category" onclick="toggleCategory('about')">O Nas</h3>
+        </nav>
+        <main class="content active" id="about">
+            <h1>Kim jesteśmy?</h1>
+            <p>Jesteśmy zespołem pasjonatów technologii i archiwizacji, którzy udostępniają różnorodne pliki i informacje.</p>
+        </main>
+    </div>
     <footer>
         &copy; 2024 Archiwum Plików
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
