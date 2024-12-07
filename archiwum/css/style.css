@@ -107,3 +107,21 @@ footer {
 .sidebar ul li {
     transition: all 0.3s ease;
 }
+
+/* Zwiększenie czcionki dla kategorii "Bremu", "Madzik98", "Inne mapki" */
+.sidebar li > a {
+    font-size: 1.1em; /* Większa czcionka dla kategorii */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sidebar li > ul {
+    margin-left: 20px; /* Wcięcie dla podkategorii */
+}
+
+/* Stylowanie plików w tych kategoriach */
+.sidebar li > ul li a {
+    font-size: 1em; /* Czcionka plików mniejsza niż kategorii */
+    font-weight: normal;
+    padding-left: 10px; /* Wcięcie dla plików */
+}
