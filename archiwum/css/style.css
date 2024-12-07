@@ -18,7 +18,7 @@ body {
 
 /* Nagłówek */
 header {
-    background-color: #0066cc;
+    background-color: #242424;
     color: white;
     text-align: center;
     padding: 0; /* Ustawiamy padding na 0, żeby mieć pełną kontrolę nad wyrównaniem */
@@ -158,7 +158,7 @@ header {
 
 /* Stopka */
 footer {
-    background-color: #0066cc;
+    background-color: #242424;
     color: white;
     text-align: center;
     padding: 10px;
@@ -170,7 +170,7 @@ footer {
 
 /* Stylizacja linków w stopce */
 footer a {
-    color: #ffffff; /* Kolor linku */
+    color: white; /* Kolor linku */
     text-decoration: none; /* Usuń podkreślenie */
     font-weight: bold; /* Pogrubienie tekstu */
 }
