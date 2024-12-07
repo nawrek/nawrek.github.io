@@ -32,7 +32,7 @@ header {
     overflow-y: auto;
 }
 
-/* Stylowanie linków w sidebarze */
+/* Stylowanie nagłówków kategorii w sidebarze */
 .sidebar h3 {
     font-size: 1.2em;
     margin-top: 0;
@@ -42,10 +42,11 @@ header {
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 .sidebar li {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .sidebar a {
