@@ -15,21 +15,20 @@
     </nav>
     <div class="container">
         <nav class="sidebar">
-            <h3>Menu</h3>
-            <a href="#documents">Dokumenty</a>
-            <a href="#images">Obrazy</a>
-            <a href="#audio">Pliki Audio</a>
-            <a href="#videos">Filmy</a>
+            <h3 class="category" onclick="toggleCategory('documents')">Dokumenty</h3>
+            <h3 class="category" onclick="toggleCategory('images')">Obrazy</h3>
         </nav>
-        <main class="content">
-            <section id="documents">
+        <main class="content" id="documents">
+            <section>
                 <h2>Dokumenty</h2>
                 <ul>
                     <li><a href="file1.docx">file1.docx</a></li>
                     <li><a href="file2.pdf">file2.pdf</a></li>
                 </ul>
             </section>
-            <section id="images">
+        </main>
+        <main class="content" id="images">
+            <section>
                 <h2>Obrazy</h2>
                 <ul>
                     <li><a href="image1.jpg">image1.jpg</a></li>
@@ -40,5 +39,7 @@
     <footer>
         &copy; 2024 Archiwum Plików
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
