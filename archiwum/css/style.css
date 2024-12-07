@@ -35,7 +35,7 @@ header {
     padding: 20px;
     width: 100%;
     max-width: calc(100%); /* Zostawiamy miejsce na sidebar */
-    background-color: #ffffff;
+    background-color: #ffffff00;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     height: calc(100% - 60px); /* Wysokość kontenera strony minus wysokość nagłówka */
