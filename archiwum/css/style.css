@@ -51,15 +51,17 @@ header {
     width: 250px;
     padding: 15px;
     position: fixed;
-    top: 70px; /* Sidebar zaczyna się 60px poniżej nagłówka */
+    top: 70px; /* Sidebar zaczyna się 60px poniżej nagłówka (50px wysokość nagłówka + 10px margines) */
     right: 0; /* Sidebar po prawej stronie */
-    height: calc(100% - 70px); /* Sidebar rozciąga się do samego dołu ekranu, zaczynając od 70px poniżej nagłówka */
+    height: calc(100% - 60px); /* Sidebar rozciąga się do samego dołu ekranu, zaczynając od 60px poniżej nagłówka */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     z-index: 1000; /* Sidebar znajduje się nad treścią */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+
+/* Ukrywanie sidebaru */
+.sidebar.hidden {
+    transform: translateX(100%);
 }
 
 /* Stylowanie nagłówków kategorii w sidebarze */
@@ -72,7 +74,7 @@ header {
     border-bottom: 1px solid #444;
 }
 
-/* Lista kategorii w sidebarze */
+/* Lista kategorii w sidebarie */
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -122,27 +124,36 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Dodanie przycisku na dole */
-.sidebar .action-buttons {
-    margin-top: auto; /* Przyciski na dole sidebaru */
-}
-
-.sidebar .action-buttons button {
-    background-color: #0066cc;
+/* Przyciski w sidebarze */
+.author-btn {
+    background-color: #0066cc; /* Kolor tła przycisku */
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    margin-top: 20px;
     cursor: pointer;
-    margin-top: 10px;
-    width: 100%;
-    font-size: 1em;
     text-align: center;
+    width: 100%; /* Przyciągamy przycisk do szerokości sidebaru */
+    font-size: 1.2em;
 }
 
 /* Stylowanie przycisku na hover */
-.sidebar .action-buttons button:hover {
-    background-color: #005bb5;
+.author-btn:hover {
+    background-color: #005bb5; /* Zmiana koloru tła na hover */
+}
+
+/* Utrzymanie przycisku na dole sidebaru */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* Utrzymanie przycisku na dole */
+.sidebar button:last-child {
+    margin-top: auto; /* Zajmuje pozostałą przestrzeń, przesuwając przycisk na dół */
 }
 
 /* Stopka */
