@@ -29,6 +29,21 @@
         nav a:hover {
             background-color: #0056b3;
         }
+        .language-switch {
+            margin: 20px;
+        }
+        .language-switch a {
+            margin: 0 5px;
+            padding: 5px 10px;
+            color: #ffffff;
+            background-color: #444444;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        .language-switch a:hover {
+            background-color: #222222;
+        }
         .content {
             margin: 20px auto;
             max-width: 800px;
@@ -43,6 +58,9 @@
 </head>
 <body>
     <h1>Witaj w Archiwum Plików</h1>
+    <div class="language-switch">
+        <a href="index.html" lang="pl">Polski</a> | <a href="index-en.html" lang="en">English</a>
+    </div>
     <nav>
         <a href="index.html">Strona Główna</a>
         <a href="/archiwum/files.html">Pliki</a>
@@ -57,3 +75,4 @@
     </footer>
 </body>
 </html>
+
