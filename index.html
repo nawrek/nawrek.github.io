@@ -6,62 +6,54 @@
     <title>Archiwum Plików</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #0000ff, #ffffff);
-            font-family: "Comic Sans MS", sans-serif;
-            color: #000000;
+            background: #f0f8ff;
+            font-family: Arial, sans-serif;
+            color: #333333;
             text-align: center;
         }
         h1 {
-            color: #ff0000;
-            text-shadow: 2px 2px #ffff00;
-            animation: blink 1s infinite;
+            color: #0044cc;
         }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
+        nav {
+            margin: 20px;
         }
-        .file-list {
-            border: 3px dashed #ff00ff;
-            padding: 10px;
-            margin: 20px auto;
-            width: 80%;
-            background-color: #ffffff;
-        }
-        a {
-            color: #0000ff;
+        nav a {
+            margin: 0 10px;
+            padding: 5px 15px;
+            color: #ffffff;
+            background-color: #007bff;
             text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
         }
-        a:hover {
-            color: #ff00ff;
-            text-decoration: underline;
+        nav a:hover {
+            background-color: #0056b3;
         }
-        .footer {
+        .content {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+        }
+        footer {
             margin-top: 30px;
             font-size: 12px;
-            color: #888888;
-        }
-        .gif {
-            margin-top: 20px;
+            color: #666666;
         }
     </style>
 </head>
 <body>
-    <h1>Witaj w moim Archiwum Plików!</h1>
-    <marquee behavior="scroll" direction="left" scrollamount="10" style="color: #00ff00;">Pobierz pliki, które chcesz, za darmo!</marquee>
-    <div class="file-list">
-        <h2>Pliki do pobrania:</h2>
-        <ul>
-            <li><a href="file1.zip">file1.zip</a></li>
-            <li><a href="file2.pdf">file2.pdf</a></li>
-            <li><a href="file3.docx">file3.docx</a></li>
-            <li><a href="file4.mp3">file4.mp3</a></li>
-        </ul>
+    <h1>Witaj w Archiwum Plików</h1>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="files.html">Pliki</a>
+        <a href="about.html">O stronie</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+    <div class="content">
+        <p>Witaj na mojej stronie internetowej z plikami! Tutaj znajdziesz różne zasoby, które możesz pobrać. Przejdź do zakładki <strong>Pliki</strong>, aby rozpocząć przeglądanie.</p>
     </div>
-    <div class="gif">
-        <img src="https://media.giphy.com/media/3o6ZsYm5v1x7P83B9C/giphy.gif" alt="Dancing Gif">
-    </div>
-    <div class="footer">
-        &copy; 2024 Moje Archiwum Plików. Wszystkie prawa zastrzeżone.
-    </div>
+    <footer>
+        &copy; 2024 Archiwum Plików
+    </footer>
 </body>
 </html>
