@@ -26,7 +26,7 @@ header {
     left: 0;
     z-index: 1100; /* Nagłówek będzie zawsze nad innymi elementami */
     height: 70px; /* Wysokość nagłówka */
-    line-height: 70px; /* Wyśrodkowanie tekstu w pionie, pasuje do wysokości nagłówka */
+    line-height: 30px; /* Wyśrodkowanie tekstu w pionie, pasuje do wysokości nagłówka */
 }
 
 /* Kontener na treść strony */
