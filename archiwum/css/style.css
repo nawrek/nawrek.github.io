@@ -31,6 +31,14 @@ header {
     line-height: 30px; /* Wyśrodkowanie tekstu w pionie, pasuje do wysokości nagłówka */
 }
 
+header .logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Wyśrodkowanie logo */
+    padding: 10px 0; /* Odstępy od góry i dołu */
+}
+
 /* Kontener na treść strony */
 .container {
     margin-top: 60px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
