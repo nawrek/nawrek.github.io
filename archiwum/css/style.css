@@ -27,14 +27,14 @@ header {
 
 /* Kontener na treść strony */
 .container {
-    margin-top: 70px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
+    margin-top: 100px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
     padding: 20px;
     width: 100%;
     max-width: calc(100% - 270px); /* Dostosowanie szerokości kontenera na treść z uwzględnieniem sidebaru */
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    height: calc(100% - 100px); /* Zapewniamy, że kontener nie nachodzi na nagłówek */
+    height: calc(100% - 70px); /* Zapewniamy, że kontener nie nachodzi na nagłówek */
     overflow-y: auto;
 }
 
