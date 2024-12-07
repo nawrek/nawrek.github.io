@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Wybieramy wszystkie nagłówki kategorii (h3)
     const toggleButtons = document.querySelectorAll('.toggle-category');
+    // Przycisk do przełączania widoczności sidebaru
+    const toggleButton = document.getElementById('toggle-sidebar');
+    const sidebar = document.getElementById('sidebar');
+
+    // Funkcja do przełączania ukrywania sidebaru
+    toggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('hidden'); // Dodajemy/Usuwamy klasę "hidden"
+    });
 
     // Dodajemy nasłuchiwacz kliknięcia dla każdego nagłówka kategorii
     toggleButtons.forEach(function (button) {
