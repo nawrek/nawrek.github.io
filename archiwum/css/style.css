@@ -2,6 +2,7 @@
 body {
     font-family: 'Verdana', sans-serif;
     background-color: #f0f0f0;
+    background-image: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Dirt_background_JE2.png'); /* Ścieżka do obrazka */
     background-repeat: no-repeat; /* Zapętlamy obrazek zarówno w poziomie, jak i w pionie */
     background-size: cover; /* Opcjonalnie można ustawić 'cover' jeśli chcesz, aby tło wypełniało całą stronę */
     background-position: center center;
@@ -34,7 +35,7 @@ header {
     padding: 20px;
     width: 100%;
     max-width: calc(100%); /* Zostawiamy miejsce na sidebar */
-    background-color: #ffffff00;
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     height: calc(100% - 60px); /* Wysokość kontenera strony minus wysokość nagłówka */
