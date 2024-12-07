@@ -37,8 +37,12 @@ header {
     font-size: 1.2em;
     margin-top: 0;
     cursor: pointer; /* Zmieniamy kursor na "rączkę" dla interakcji */
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #444; /* Dodanie linii pod kategorią */
 }
 
+/* Lista kategorii w sidebarze */
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -56,8 +60,36 @@ header {
     display: block; /* Aby linki były blokami */
 }
 
-.sidebar a:hover {
-    text-decoration: underline;
+/* Zwiększenie czcionki i pogrubienie kategorii */
+.sidebar li > a {
+    font-size: 1.2em; /* Większa czcionka dla kategorii */
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+/* Stylowanie plików w tych kategoriach */
+.sidebar li > ul li a {
+    font-size: 1em; /* Czcionka plików mniejsza niż kategorii */
+    font-weight: normal;
+    padding-left: 15px; /* Wcięcie dla plików */
+    padding-bottom: 5px;
+}
+
+/* Wcięcie dla podkategorii */
+.sidebar li > ul {
+    margin-left: 15px; /* Wcięcie dla podkategorii */
+    padding-left: 5px; /* Wcięcie dla podkategorii */
+}
+
+/* Ukrywanie kategorii */
+.hidden {
+    display: none;
+}
+
+/* Animacja rozwijania */
+.sidebar ul li {
+    transition: all 0.3s ease;
 }
 
 /* Kontener na treść strony */
@@ -96,32 +128,4 @@ footer {
 /* Stylowanie przycisku aktywnej podstrony w sidebarze */
 .sidebar a.active {
     font-weight: bold;
-}
-
-/* Ukrywanie kategorii */
-.hidden {
-    display: none;
-}
-
-/* Animacja rozwijania */
-.sidebar ul li {
-    transition: all 0.3s ease;
-}
-
-/* Zwiększenie czcionki dla kategorii "Bremu", "Madzik98", "Inne mapki" */
-.sidebar li > a {
-    font-size: 1.1em; /* Większa czcionka dla kategorii */
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.sidebar li > ul {
-    margin-left: 20px; /* Wcięcie dla podkategorii */
-}
-
-/* Stylowanie plików w tych kategoriach */
-.sidebar li > ul li a {
-    font-size: 1em; /* Czcionka plików mniejsza niż kategorii */
-    font-weight: normal;
-    padding-left: 10px; /* Wcięcie dla plików */
 }
