@@ -2,10 +2,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    color: #FFFFFF;
-    background: url('https://example.com/space-background.jpg') no-repeat center center fixed; /* Tło przypominające gwieździste niebo */
-    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F0F0; /* Jasne tło */
+    color: #333; /* Ciemny tekst */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,73 +12,72 @@ body {
 
 /* Nagłówek strony */
 header {
-    background-color: #2f2f2f;
-    color: #FFCC00; /* Żółty tekst */
+    background-color: #0044CC; /* Niebieski nagłówek */
+    color: #FFF;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px;
     font-size: 1.8em;
     font-weight: bold;
-    border-bottom: 3px dashed #FFCC00;
+    border-bottom: 3px solid #FFF;
 }
 
 /* Pasek nawigacyjny */
-.navigation {
-    display: flex;
-    justify-content: center;
-    background: #333333;
-    padding: 10px 0;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+.navbar {
+    background-color: #0055DD;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-.navigation a {
-    margin: 0 15px;
-    color: #FFCC00;
+.navbar a {
+    color: #FFF;
+    margin: 0 20px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
     text-transform: uppercase;
 }
 
-.navigation a:hover {
-    color: #FF8C00;
+.navbar a:hover {
+    color: #FFCC00;
 }
 
 /* Struktura strony */
 .container {
     display: flex;
-    flex-direction: row-reverse; /* Sidebar po prawej stronie */
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 20px;
+    flex-grow: 1;
 }
 
+/* Sidebar */
 .sidebar {
     width: 250px;
     background-color: #333333;
+    color: #FFF;
     padding: 15px;
-    border-left: 3px solid #FFCC00;
-    height: auto;
-    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar h3 {
     color: #FFCC00;
-    font-size: 1.2em;
     text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .sidebar a {
     display: block;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #444444;
     padding: 8px;
-    border-radius: 5px;
     margin: 10px 0;
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
 }
 
 .sidebar a:hover {
@@ -88,56 +86,39 @@ header {
 
 /* Treść strony */
 .content {
-    margin-right: 270px;
+    flex-grow: 1;
+    background-color: #FFFFFF;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Przezroczyste tło, ciemne dla lepszej czytelności */
-    border: 2px dashed #FFCC00;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
 }
 
 /* Stopka strony */
 footer {
-    background-color: #2f2f2f;
-    color: #FFCC00;
+    background-color: #0044CC;
+    color: #FFF;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px;
     font-size: 1.2em;
-    border-top: 3px dashed #FFCC00;
+    font-weight: bold;
     position: sticky;
     bottom: 0;
+    width: 100%;
 }
 
-/* Linki */
-a {
-    color: #FFCC00;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FF8C00;
-}
-
-/* Typografia */
-h1, h2 {
-    color: #FFCC00;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Sekcja archiwum plików */
+/* Stylizacja sekcji archiwum */
 .archive {
     margin-top: 20px;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 2px dashed #FFCC00;
+    background-color: #FFCC00;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .archive h2 {
     text-align: center;
-    color: #FFCC00;
-    text-transform: uppercase;
+    color: #333;
     font-size: 1.4em;
     margin-bottom: 20px;
 }
@@ -153,8 +134,8 @@ h1, h2 {
 
 .archive a {
     display: inline-block;
-    color: #FFCC00;
-    background-color: #444444;
+    color: #0044CC;
+    background-color: #FFF;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
