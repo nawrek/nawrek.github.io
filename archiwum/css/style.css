@@ -2,7 +2,7 @@
 body {
     font-family: 'Verdana', sans-serif;
     background-color: #f0f0f0;
-    background-image: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Dirt_background_JE2.png'); /* Ścieżka do obrazka */
+    background-image: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/ca/End_Poem_background_BE.png'); /* Ścieżka do obrazka */
     background-repeat: no-repeat; /* Zapętlamy obrazek zarówno w poziomie, jak i w pionie */
     background-size: cover; /* Opcjonalnie można ustawić 'cover' jeśli chcesz, aby tło wypełniało całą stronę */
     background-position: center center;
