@@ -31,15 +31,6 @@ header {
     line-height: 30px; /* Wyśrodkowanie tekstu w pionie, pasuje do wysokości nagłówka */
 }
 
-header .logo {
-    max-width: 75%;
-    max-height: 75%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Wyśrodkowanie logo */
-    padding: 10px 0; /* Odstępy od góry i dołu */
-}
-
 header a {
     text-decoration: none; /* Usuń podkreślenie linku */
     display: block; /* Umożliwia kliknięcie na cały obszar obrazka */
