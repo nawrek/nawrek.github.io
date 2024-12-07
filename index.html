@@ -3,40 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Główna - Archiwum</title>
+    <title>Home - Moje Projekty</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        Wafelq - Blog Osobisty 2010
+        <div class="navbar">
+            <a href="index.html" class="home-link">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="archive.html">Archiwum</a> <!-- Odnośnik do strony archiwum -->
+        </div>
     </header>
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
     <div class="container">
-        <nav class="sidebar">
+        <div class="sidebar">
             <h3>Menu</h3>
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
             <a href="gallery.html">Gallery</a>
-        </nav>
-        <main class="content">
-            <h1>Witaj na moim blogu!</h1>
-            <p>Witam na mojej stronie, gdzie będę dzielić się moimi projektami i plikami. Przejdź do archiwum, aby zobaczyć więcej!</p>
+            <a href="contact.html">Contact</a>
+            <a href="archive.html">Archiwum</a> <!-- Odnośnik do strony archiwum -->
+        </div>
 
-            <div class="archive">
-                <h2>Archiwum plików</h2>
-                <ul>
-                    <li><a href="archive/project1.html">Projekt 1 - Opis projektu</a></li>
-                    <li><a href="archive/project2.html">Projekt 2 - Opis projektu</a></li>
-                    <li><a href="archive/old_files.html">Stare Pliki</a></li>
-                </ul>
-            </div>
+        <main class="content">
+            <h1>Witaj na mojej stronie!</h1>
+            <p>To jest strona główna. W menu możesz przejść do innych sekcji, takich jak: "About Me", "Gallery" oraz "Contact".</p>
+            <p>Jeśli chcesz zobaczyć moje starsze projekty, przejdź do <a href="archive.html">Archiwum</a>.</p>
         </main>
     </div>
+
     <footer>
         &copy; 2024 Wafelq - Wszystkie prawa zastrzeżone
     </footer>
