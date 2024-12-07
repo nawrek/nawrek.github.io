@@ -167,3 +167,16 @@ footer {
     width: 100%;
     z-index: 1050; /* Sidebar znajduje się nad treścią */
 }
+
+/* Stylizacja linków w stopce */
+footer a {
+    color: #ffffff; /* Kolor linku */
+    text-decoration: none; /* Usuń podkreślenie */
+    font-weight: bold; /* Pogrubienie tekstu */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Podkreślenie przy najechaniu */
+    color: #ddd; /* Zmiana koloru na jasnoszary */
+}
+
