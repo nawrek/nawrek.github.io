@@ -14,12 +14,19 @@
         <a href="files.html">Pliki</a>
         <a href="about.html">O Nas</a>
     </nav>
-    <main class="content">
-        <h1>Witaj!</h1>
-        <p>Zapraszamy do odkrywania naszego archiwum plików i dowiedzenia się więcej o naszej działalności.</p>
-    </main>
+    <div class="container">
+        <nav class="sidebar">
+            <h3 class="category" onclick="toggleCategory('home')">Strona Główna</h3>
+        </nav>
+        <main class="content active" id="home">
+            <h1>Witaj!</h1>
+            <p>Zapraszamy do odkrywania naszego archiwum plików i dowiedzenia się więcej o naszej działalności.</p>
+        </main>
+    </div>
     <footer>
         &copy; 2024 Archiwum Plików
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
