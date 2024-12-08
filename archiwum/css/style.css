@@ -16,6 +16,28 @@ body {
     align-content: center;
 }
 
+/* Ustawienia domyślnego koloru linków */
+a {
+    color: #ffd700; /* Jasny złoty kolor dobrze widoczny na ciemnym tle */
+    text-decoration: none; /* Usunięcie podkreślenia linków */
+}
+
+/* Efekt hover */
+a:hover {
+    color: #ffa500; /* Jasny pomarańczowy na hover */
+    text-decoration: underline; /* Dodanie podkreślenia przy najechaniu */
+}
+
+/* Link aktywny */
+a:active {
+    color: #ff4500; /* Ciemniejszy pomarańczowy */
+}
+
+/* Link odwiedzony */
+a:visited {
+    color: #daa520; /* Przyciemniony złoty dla odwiedzonych linków */
+}
+
 /* Nagłówek */
 header {
     background-color: #242424;
