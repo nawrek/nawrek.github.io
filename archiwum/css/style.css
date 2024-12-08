@@ -288,6 +288,15 @@ footer a:hover {
     background-color: #218838;
 }
 
+/* Podstawowe ustawienie: sidebar ukrywa się */
+.sidebar.hidden {
+    transform: translateX(100%);
+}
+
+/* Zmieniamy ustawienie dla podstron map - sidebar pozostaje rozwinięty */
+.maps-page .sidebar.hidden {
+    transform: translateX(0); /* Przywraca domyślną widoczność sidebaru */
+}
 
 /* Responsywność */
 @media (max-width: 768px) {
