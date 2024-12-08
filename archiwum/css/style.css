@@ -326,3 +326,10 @@ footer a:hover {
         width: 90%;
     }
 }
+/* Styl dla kontenera licznika */
+.hit-counter {
+    position: fixed;
+    left: 0; /* Przypisuje licznik do lewej strony */
+    bottom: 10px; /* Ustawia odległość od dolnej krawędzi ekranu */
+    z-index: 1100; /* Zapewnia, że licznik będzie widoczny na wierzchu */
+}
