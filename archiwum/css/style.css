@@ -183,6 +183,7 @@ footer a:hover {
     color: white;
     border-radius: 10px;
     width: 23%; /* Maksymalnie 4 kafelki w jednym wierszu */
+    margin-left: 0px;
     height: 150px;
     display: flex;
     justify-content: center;
