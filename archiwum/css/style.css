@@ -168,11 +168,13 @@ footer a:hover {
 /* Sekcja map - Wyświetlanie jako lista */
 .map-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Wymuszamy zawijanie kafelków */
     gap: 30px; /* Zwiększenie przestrzeni między kafelkami */
     justify-content: space-evenly;
     margin-top: 20px;
     padding: 0 15px;
+    width: calc(100% - 250px); /* Zmniejszamy szerokość sekcji map, aby unikać zakrywania przez sidebar */
+    margin-left: 250px; /* Zwiększamy lewy margines, aby kontener nie nachodził na sidebar */
 }
 
 /* Kafelek kategorii */
@@ -180,14 +182,15 @@ footer a:hover {
     background-color: #333;
     color: white;
     border-radius: 10px;
-    width: 250px; /* Dostosowanie szerokości kafelka */
-    height: 150px; /* Dostosowanie wysokości kafelka */
+    width: 23%; /* Maksymalnie 4 kafelki w jednym wierszu */
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    flex-grow: 1; /* Wyrównanie kafelków w poziomie */
 }
 
 /* Efekt hover na kafelki */
@@ -201,33 +204,17 @@ footer a:hover {
     font-weight: bold;
 }
 
-/* Przycisk pobierz */
-.map-details button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: auto;
-}
-
-/* Efekt hover na przycisk */
-.map-details button:hover {
-    background-color: #218838;
-}
-
 /* Responsywność */
 @media (max-width: 768px) {
     .map-section {
         flex-direction: column;
         align-items: center;
+        width: 100%; /* Szerokość pełnego ekranu na urządzeniach mobilnych */
+        margin-left: 0; /* Brak lewego marginesu na urządzeniach mobilnych */
     }
 
     .map-category {
-        width: 90%; /* Zmniejszenie szerokości na mniejszych ekranach */
-        height: auto;
+        width: 90%; /* Zwiększenie szerokości kafelków na urządzeniach mobilnych */
+        height: auto; /* Automatyczna wysokość */
     }
 }
