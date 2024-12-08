@@ -2,9 +2,9 @@
 body {
     font-family: 'Verdana', sans-serif;
     background-color: #f0f0f0;
-    background-image: url('https://raw.githubusercontent.com/nawrek/nawrek.github.io/refs/heads/main/archiwum/css/Dirt_background_BE1.png');
-    background-repeat: repeat;
-    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/nawrek/nawrek.github.io/refs/heads/main/archiwum/css/Dirt_background_BE1.png'); /* Ścieżka do obrazka */
+    background-repeat: repeat; /* Zapętlamy obrazek zarówno w poziomie, jak i w pionie */
+    background-size: cover; /* Opcjonalnie można ustawić 'cover' jeśli chcesz, aby tło wypełniało całą stronę */
     background-position: center center;
     margin: 0;
     padding: 0;
@@ -18,24 +18,24 @@ body {
 
 /* Ustawienia domyślnego koloru linków */
 a {
-    color: #ffd700;
-    text-decoration: none;
+    color: #ffd700; /* Jasny złoty kolor dobrze widoczny na ciemnym tle */
+    text-decoration: none; /* Usunięcie podkreślenia linków */
 }
 
 /* Efekt hover */
 a:hover {
-    color: #ffa500;
-    text-decoration: underline;
+    color: #ffa500; /* Jasny pomarańczowy na hover */
+    text-decoration: underline; /* Dodanie podkreślenia przy najechaniu */
 }
 
 /* Link aktywny */
 a:active {
-    color: #ff4500;
+    color: #ff4500; /* Ciemniejszy pomarańczowy */
 }
 
 /* Link odwiedzony */
 a:visited {
-    color: #daa520;
+    color: #daa520; /* Przyciemniony złoty dla odwiedzonych linków */
 }
 
 /* Nagłówek */
@@ -43,14 +43,14 @@ header {
     background-color: #242424;
     color: white;
     text-align: center;
-    padding: 0;
+    padding: 0; /* Ustawiamy padding na 0, żeby mieć pełną kontrolę nad wyrównaniem */
     width: 100%;
-    position: fixed;
+    position: fixed; /* Nagłówek przyklejony do góry */
     top: 0;
     left: 0;
-    z-index: 1100;
-    height: 70px;
-    line-height: 30px;
+    z-index: 1100; /* Nagłówek będzie zawsze nad innymi elementami */
+    height: 70px; /* Wysokość nagłówka */
+    line-height: 30px; /* Wyśrodkowanie tekstu w pionie, pasuje do wysokości nagłówka */
 }
 
 header .logo {
@@ -63,76 +63,40 @@ header .logo {
 }
 
 header .logo:hover {
-    cursor: pointer;
+    cursor: pointer; /* Zmienia kursor na rękę */
 }
 
 /* Kontener na treść strony */
 .container {
-    margin-top: 60px;
+    margin-top: 60px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
     padding: 20px;
     width: 100%;
-    max-width: calc(100%);
+    max-width: calc(100%); /* Zostawiamy miejsce na sidebar */
     background-color: #ffffff00;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    height: calc(100% - 60px);
+    height: calc(100% - 60px); /* Wysokość kontenera strony minus wysokość nagłówka */
     overflow-y: auto;
 }
 
-/* Zasadniczy wygląd sidebaru */
+/* Sidebar */
 .sidebar {
     background-color: #333;
     color: white;
     width: 250px;
     padding: 15px;
     position: fixed;
-    top: 70px;
-    right: 0;
-    height: calc(100% - 60px);
+    top: 70px; /* Sidebar zaczyna się 60px poniżej nagłówka (50px wysokość nagłówka + 10px margines) */
+    right: 0; /* Sidebar po prawej stronie */
+    height: calc(100% - 60px); /* Sidebar rozciąga się do samego dołu ekranu, zaczynając od 60px poniżej nagłówka */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
-    z-index: 1000;
-    transition: transform 0.3s ease;
+    z-index: 1000; /* Sidebar znajduje się nad treścią */
 }
 
-/* Ukrywanie sidebaru na stronie głównej */
+/* Ukrywanie sidebaru */
 .sidebar.hidden {
     transform: translateX(100%);
-}
-
-/* Kiedy sidebar jest widoczny */
-.sidebar.visible {
-    transform: translateX(0);
-}
-
-/* Przycisk rozwijania sidebaru */
-.sidebar-toggle {
-    background-color: #333;
-    color: white;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-}
-
-/* Przyciski w sidebarze */
-.sidebar-toggle:focus {
-    outline: none;
-}
-
-/* Stały sidebar na innych stronach */
-body:not(.home) .sidebar {
-    transform: translateX(0);  /* Sidebar zawsze widoczny na innych stronach */
-}
-
-/* Jeśli dodamy klasę "sidebar-visible" w body, to sidebar zostanie pokazany */
-body.sidebar-visible .sidebar {
-    transform: translateX(0);
-}
-
-/* Zasady dla strony głównej */
-body.home .sidebar {
-    transform: translateX(100%); /* Sidebar początkowo schowany */
 }
 
 /* Stylowanie nagłówków kategorii w sidebarze */
@@ -145,7 +109,7 @@ body.home .sidebar {
     border-bottom: 1px solid #444;
 }
 
-/* Lista kategorii w sidebarze */
+/* Lista kategorii w sidebarie */
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -163,6 +127,12 @@ body.home .sidebar {
     display: block;
 }
 
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 /* Zwiększenie czcionki i pogrubienie kategorii */
 .sidebar li > a {
     font-size: 1.2em;
@@ -171,10 +141,60 @@ body.home .sidebar {
     padding-left: 5px;
 }
 
+/* Stylowanie plików w tych kategoriach */
+.sidebar li > ul li a {
+    font-size: 1em;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
 /* Wcięcie dla podkategorii */
 .sidebar li > ul {
     margin-left: 15px;
     padding-left: 5px;
+}
+
+/* Ukrywanie kategorii */
+.hidden {
+    display: none;
+}
+
+/* Animacja rozwijania */
+.sidebar ul li {
+    transition: all 0.3s ease;
+}
+
+/* Przyciski w sidebarze */
+.author-btn {
+    background-color: #0066cc; /* Kolor tła przycisku */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%; /* Przyciągamy przycisk do szerokości sidebaru */
+    font-size: 1.2em;
+}
+
+/* Stylowanie przycisku na hover */
+.author-btn:hover {
+    background-color: #005bb5; /* Zmiana koloru tła na hover */
+}
+
+/* Utrzymanie przycisku na dole sidebaru */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* Utrzymanie przycisku na dole */
+.sidebar button:last-child {
+    margin-top: auto; /* Zajmuje pozostałą przestrzeń, przesuwając przycisk na dół */
 }
 
 /* Stopka */
@@ -186,59 +206,107 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 1050;
+    z-index: 1050; /* Sidebar znajduje się nad treścią */
 }
 
 /* Stylizacja linków w stopce */
 footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    color: white; /* Kolor linku */
+    text-decoration: none; /* Usuń podkreślenie */
+    font-weight: bold; /* Pogrubienie tekstu */
 }
 
 footer a:hover {
-    text-decoration: underline;
-    color: #ddd;
+    text-decoration: underline; /* Podkreślenie przy najechaniu */
+    color: #ddd; /* Zmiana koloru na jasnoszary */
 }
 
 /* Sekcja map - Wyświetlanie jako lista */
 .map-section {
     display: flex;
-    flex-wrap: wrap; /* Wymuszamy zawijanie kafelków */
-    gap: 30px; /* Zwiększenie przestrzeni między kafelkami */
-    justify-content: space-evenly;
+    flex-direction: column; /* Elementy układają się w kolumnie */
+    gap: 20px; /* Odstępy między mapkami */
     margin-top: 20px;
-    padding: 0 15px;
-    width: calc(100% - 250px); /* Zmniejszamy szerokość sekcji map, aby unikać zakrywania przez sidebar */
-    margin-left: 250px; /* Zwiększamy lewy margines, aby kontener nie nachodził na sidebar */
+    padding: 0 15px; /* Dodatkowy padding dla lepszego wyglądu */
 }
 
-/* Kafelek kategorii */
-.map-category {
+/* Pojedyncza mapa */
+.map-item {
     background-color: #333;
     color: white;
     border-radius: 10px;
-    width: 23%; /* Maksymalnie 4 kafelki w jednym wierszu */
-    margin-left: 0px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 85%; /* Rozciągnięcie na całą szerokość - sidebar */
+    padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    flex-grow: 1; /* Wyrównanie kafelków w poziomie */
+    display: flex;
+    align-items: flex-start; /* Ustawienie zawartości w jednej linii */
+    gap: 15px; /* Odstęp między obrazem a opisem */
 }
 
-/* Efekt hover na kafelki */
-.map-category:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+/* Efekt hover na mapę */
+.map-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.map-category h3 {
-    font-size: 1.2em;
-    font-weight: bold;
+/* Obrazek mapy */
+.map-screenshot {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0; /* Zapobiega zmniejszaniu obrazu */
+}
+
+/* Szczegóły mapy */
+.map-details {
+    flex: 1; /* Rozciąga się na pozostałą przestrzeń */
+}
+
+.map-details h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.map-details p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Przycisk pobierz */
+.map-details button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Wyrównanie do dołu */
+}
+
+/* Efekt hover na przycisk */
+.map-details button:hover {
+    background-color: #218838;
+}
+
+/* Domyślnie sidebar może być zwijany */
+.sidebar.hidden {
+    transform: translateX(100%); /* Przesuwa sidebar poza ekran */
+}
+
+/* Na stronach związanych z mapami - blokujemy zwijanie */
+.maps-page .sidebar {
+    transform: translateX(0); /* Zatrzymujemy transformację, aby sidebar był zawsze widoczny */
+}
+
+/* Zmieniamy również ukrywanie na hover lub inne działania w sidebarze */
+.maps-page .sidebar.hidden {
+    display: block; /* Zatrzymuje animację zwijania na stronach z mapami */
 }
 
 /* Responsywność */
@@ -246,12 +314,9 @@ footer a:hover {
     .map-section {
         flex-direction: column;
         align-items: center;
-        width: 100%; /* Szerokość pełnego ekranu na urządzeniach mobilnych */
-        margin-left: 0; /* Brak lewego marginesu na urządzeniach mobilnych */
     }
 
-    .map-category {
-        width: 90%; /* Zwiększenie szerokości kafelków na urządzeniach mobilnych */
-        height: auto; /* Automatyczna wysokość */
+    .map-item {
+        width: 90%;
     }
 }
