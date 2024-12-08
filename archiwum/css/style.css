@@ -288,14 +288,19 @@ footer a:hover {
     background-color: #218838;
 }
 
-/* Podstawowe ustawienie: sidebar ukrywa się */
+/* Domyślnie sidebar może być zwijany */
 .sidebar.hidden {
-    transform: translateX(100%);
+    transform: translateX(100%); /* Przesuwa sidebar poza ekran */
 }
 
-/* Zmieniamy ustawienie dla podstron map - sidebar pozostaje rozwinięty */
+/* Na stronach związanych z mapami - blokujemy zwijanie */
+.maps-page .sidebar {
+    transform: translateX(0); /* Zatrzymujemy transformację, aby sidebar był zawsze widoczny */
+}
+
+/* Zmieniamy również ukrywanie na hover lub inne działania w sidebarze */
 .maps-page .sidebar.hidden {
-    transform: translateX(0); /* Przywraca domyślną widoczność sidebaru */
+    display: block; /* Zatrzymuje animację zwijania na stronach z mapami */
 }
 
 /* Responsywność */
