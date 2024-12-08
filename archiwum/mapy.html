@@ -3,128 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Map - Przegląd Map</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Zakładając, że masz plik styles.css -->
+    <title>Mapy Minecraft - Archiwum Polska</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Nagłówek strony -->
-    <header>
-        <div class="logo">
-            <img src="https://via.placeholder.com/150" alt="Logo">
-        </div>
-    </header>
+<body class="maps-page">
 
-    <!-- Kontener na treść strony -->
-    <div class="container">
-        <h1>Przegląd Map</h1>
+<header>
+    <img src="css/minecraft_title.png" alt="Minecraft Archiwum Polska" class="logo" onclick="window.location.href='index.html';">
+</header>
 
-        <!-- Sekcja map -->
-        <div class="map-section">
-            <!-- Pierwsza mapa -->
-            <div class="map-item">
-                <div class="map-screenshot">
-                    <img src="https://via.placeholder.com/150x100" alt="Mapa 1">
-                </div>
-                <div class="map-details">
-                    <h3>Mapa 1</h3>
-                    <p>Opis mapy 1. Wskazówki i szczegóły dotyczące tej mapy.</p>
-                    <button>Pobierz Mapę</button>
-                </div>
-            </div>
+<div class="sidebar">
+    <ul>
+        <li><a href="escape.html" class="download-link">Escape</a></li>
+        <li><a href="adventure.html" class="download-link">Adventure</a></li>
+        <li><a href="parkour.html" class="download-link">Parkour</a></li>
+        <li><a href="survival.html" class="download-link">Survival</a></li>
+        <li><a href="minigames.html" class="download-link">Minigames</a></li>
+        <li><a href="mapy_youtuberow.html" class="download-link">Mapy Youtuberów</a></li>
+        <li><a href="inne.html" class="download-link">Inne</a></li>
+    </ul>
+</div>
 
-            <!-- Druga mapa -->
-            <div class="map-item">
-                <div class="map-screenshot">
-                    <img src="https://via.placeholder.com/150x100" alt="Mapa 2">
-                </div>
-                <div class="map-details">
-                    <h3>Mapa 2</h3>
-                    <p>Opis mapy 2. Wskazówki i szczegóły dotyczące tej mapy.</p>
-                    <button>Pobierz Mapę</button>
-                </div>
-            </div>
+<div class="container">
+    <h2>Wszystkie Rodzaje Map</h2>
+    <p>
+        Wybierz jedną z poniższych kategorii, aby zobaczyć dostępne mapy i je pobrać:
+    </p>
 
-            <!-- Trzecia mapa -->
-            <div class="map-item">
-                <div class="map-screenshot">
-                    <img src="https://via.placeholder.com/150x100" alt="Mapa 3">
-                </div>
-                <div class="map-details">
-                    <h3>Mapa 3</h3>
-                    <p>Opis mapy 3. Wskazówki i szczegóły dotyczące tej mapy.</p>
-                    <button>Pobierz Mapę</button>
-                </div>
-            </div>
+    <ul class="map-categories">
+        <li><a href="escape.html">Escape</a> – Mapy wymagające ucieczki z różnych miejsc.</li>
+        <li><a href="adventure.html">Adventure</a> – Przygodowe mapy z ciekawą fabułą.</li>
+        <li><a href="parkour.html">Parkour</a> – Wyzwania parkourowe.</li>
+        <li><a href="survival.html">Survival</a> – Mapy nastawione na przetrwanie.</li>
+        <li><a href="minigames.html">Minigames</a> – Mapy z mini grami.</li>
+        <li><a href="mapy_youtuberow.html">Mapy Youtuberów</a> – Mapy stworzone przez znanych twórców.</li>
+        <li><a href="inne.html">Inne</a> – Mapy o nietypowej tematyce.</li>
+    </ul>
+</div>
 
-            <!-- Czwarta mapa -->
-            <div class="map-item">
-                <div class="map-screenshot">
-                    <img src="https://via.placeholder.com/150x100" alt="Mapa 4">
-                </div>
-                <div class="map-details">
-                    <h3>Mapa 4</h3>
-                    <p>Opis mapy 4. Wskazówki i szczegóły dotyczące tej mapy.</p>
-                    <button>Pobierz Mapę</button>
-                </div>
-            </div>
+<footer>
+    <p>
+        &copy; nawrek 2024 |
+        <a href="https://github.com/nawrek/nawrek.github.io/issues/new?assignees=&labels=&projects=&template=dodanie-mapy-do-archiwum.md&title=Prośba+o+dodanie+mapy+%28tu+podaj+nazwę+mapy%29" target="_blank">Masz własną mapę którą chcesz tu umieścić? Klikaj!</a>
+    </p>
+</footer>
 
-            <!-- Piąta mapa -->
-            <div class="map-item">
-                <div class="map-screenshot">
-                    <img src="https://via.placeholder.com/150x100" alt="Mapa 5">
-                </div>
-                <div class="map-details">
-                    <h3>Mapa 5</h3>
-                    <p>Opis mapy 5. Wskazówki i szczegóły dotyczące tej mapy.</p>
-                    <button>Pobierz Mapę</button>
-                </div>
-            </div>
-
-            <!-- Szósta mapa -->
-            <div class="map-item">
-                <div class="map-screenshot">
-                    <img src="https://via.placeholder.com/150x100" alt="Mapa 6">
-                </div>
-                <div class="map-details">
-                    <h3>Mapa 6</h3>
-                    <p>Opis mapy 6. Wskazówki i szczegóły dotyczące tej mapy.</p>
-                    <button>Pobierz Mapę</button>
-                </div>
-            </div>
-        </div> <!-- Koniec sekcji map -->
-
-    </div> <!-- Koniec kontenera -->
-
-    <!-- Sidebar -->
-    <div class="sidebar hidden">
-        <h3>Kategorie</h3>
-        <ul>
-            <li><a href="#">Kategoria 1</a></li>
-            <li><a href="#">Kategoria 2</a></li>
-            <li><a href="#">Kategoria 3</a></li>
-            <li><a href="#">Kategoria 4</a></li>
-        </ul>
-    </div>
-
-    <!-- Stopka -->
-    <footer>
-        <p>&copy; 2024 Przykładowa Strona - Wszystkie prawa zastrzeżone</p>
-        <a href="#">Kontakt</a> | <a href="#">Polityka prywatności</a>
-    </footer>
-
-    <script>
-        // Prosta funkcjonalność rozwijania/zwijania kategorii w sidebarze
-        document.addEventListener('DOMContentLoaded', function () {
-            const categoryHeaders = document.querySelectorAll('.sidebar h3');
-            categoryHeaders.forEach(header => {
-                header.addEventListener('click', function() {
-                    const subcategories = header.nextElementSibling;
-                    if (subcategories && subcategories.tagName === 'UL') {
-                        subcategories.classList.toggle('hidden');
-                    }
-                });
-            });
-        });
-    </script>
+<script src="js/script.js"></script>
 </body>
 </html>
