@@ -79,7 +79,7 @@ header .logo:hover {
     overflow-y: auto;
 }
 
-/* Sidebar */
+/* Zasadniczy wygląd sidebaru */
 .sidebar {
     background-color: #333;
     color: white;
@@ -92,11 +92,47 @@ header .logo:hover {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     z-index: 1000;
+    transition: transform 0.3s ease;
 }
 
-/* Ukrywanie sidebaru */
+/* Ukrywanie sidebaru na stronie głównej */
 .sidebar.hidden {
     transform: translateX(100%);
+}
+
+/* Kiedy sidebar jest widoczny */
+.sidebar.visible {
+    transform: translateX(0);
+}
+
+/* Przycisk rozwijania sidebaru */
+.sidebar-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Przyciski w sidebarze */
+.sidebar-toggle:focus {
+    outline: none;
+}
+
+/* Stały sidebar na innych stronach */
+body:not(.home) .sidebar {
+    transform: translateX(0);  /* Sidebar zawsze widoczny na innych stronach */
+}
+
+/* Jeśli dodamy klasę "sidebar-visible" w body, to sidebar zostanie pokazany */
+body.sidebar-visible .sidebar {
+    transform: translateX(0);
+}
+
+/* Zasady dla strony głównej */
+body.home .sidebar {
+    transform: translateX(100%); /* Sidebar początkowo schowany */
 }
 
 /* Stylowanie nagłówków kategorii w sidebarze */
