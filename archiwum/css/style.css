@@ -127,6 +127,12 @@ header .logo:hover {
     display: block;
 }
 
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 /* Zwiększenie czcionki i pogrubienie kategorii */
 .sidebar li > a {
     font-size: 1.2em;
