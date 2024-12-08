@@ -264,13 +264,14 @@ footer a:hover {
 /* Szczegóły mapy */
 .map-details {
     flex: 1; /* Rozciąga się na pozostałą przestrzeń */
+    margin: 5px;
 }
 
 .map-details h3 {
     font-size: 1.4em;
     margin-bottom: 10px;
     color: #ffd700;
-    margin-top: 4px;
+    margin-top: -5px;
 }
 
 .map-details p {
