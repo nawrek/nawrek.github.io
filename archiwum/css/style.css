@@ -68,7 +68,7 @@ header .logo:hover {
 
 /* Kontener na treść strony */
 .container {
-    margin-top: 60px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
+    margin-top: 0px; /* Przesuwamy treść w dół, aby nie nachodziła na nagłówek */
     padding: 20px;
     width: 100%;
     max-width: calc(100%); /* Zostawiamy miejsce na sidebar */
