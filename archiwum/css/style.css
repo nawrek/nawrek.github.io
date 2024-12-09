@@ -33,7 +33,7 @@ h2 {
 body {
     margin: 0;
     background-color: #1d1d1d;
-    background-image: url("/assets/bg_main.png");
+    background-image: url("/css/Dirt_background_BE1.png");
     image-rendering: pixelated;
 
     font-family: sans-serif;
@@ -82,7 +82,7 @@ p {
 /* Header */
 
 .navigation-container {
-    background-image: url("/assets/bg_top.png");
+    background-image: url("/css/Dirt_background_BE1.png");
     image-rendering: pixelated;
     height: 48px;
     margin-bottom: 2em;
