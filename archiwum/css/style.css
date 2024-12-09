@@ -80,10 +80,8 @@ p {
 }
 
 /* Header */
-
 .navigation-container {
-    background-image: url("/css/Dirt_background_BE1.png");
-    image-rendering: pixelated;
+    background-color: #242424;
     height: 48px;
     margin-bottom: 2em;
     padding-left: var(--padding);
