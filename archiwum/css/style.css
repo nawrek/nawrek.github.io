@@ -16,6 +16,29 @@ body {
     align-content: center;
 }
 
+.main {
+    display: flex;
+    place-content: center;
+    column-gap: 2em;
+    row-gap: 2em;
+    
+    max-width: 62.5rem;
+    margin: auto;
+
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.main--legal {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 0;
+}
+
+.section--wide {
+    width: 100%;
+}
+
 /* Ustawienia domyślnego koloru linków */
 a {
     color: #ffd700; /* Jasny złoty kolor dobrze widoczny na ciemnym tle */
@@ -79,8 +102,8 @@ header .logo:hover {
     overflow-y: auto;
 }
 
-/* Sidebar */
-.sidebar {
+/* lista wyboru (sidebar) */
+.aside {
     background-color: #333;
     color: white;
     width: 250px;
@@ -94,13 +117,8 @@ header .logo:hover {
     z-index: 1000; /* Sidebar znajduje się nad treścią */
 }
 
-/* Ukrywanie sidebaru */
-.sidebar.hidden {
-    transform: translateX(100%);
-}
-
 /* Stylowanie nagłówków kategorii w sidebarze */
-.sidebar h3 {
+.aside h3 {
     font-size: 1.2em;
     margin-top: 0;
     cursor: pointer;
@@ -110,24 +128,24 @@ header .logo:hover {
 }
 
 /* Lista kategorii w sidebarie */
-.sidebar ul {
+.aside ul {
     list-style-type: none;
     padding: 0;
     margin-top: 0px;
 }
 
-.sidebar li {
+.aside li {
     margin: 5px 0;
 }
 
-.sidebar a {
+.aside a {
     color: white;
     text-decoration: none;
     padding: 5px 0;
     display: block;
 }
 
-.sidebar ul {
+.aside ul {
     list-style-type: none;
     padding: 0;
     margin: 5px;
@@ -136,7 +154,7 @@ header .logo:hover {
 }
 
 /* Zwiększenie czcionki i pogrubienie kategorii */
-.sidebar li > a {
+.aside li > a {
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 10px;
@@ -144,7 +162,7 @@ header .logo:hover {
 }
 
 /* Stylowanie plików w tych kategoriach */
-.sidebar li > ul li a {
+.aside li > ul li a {
     font-size: 1em;
     font-weight: normal;
     padding-left: 15px;
@@ -152,7 +170,7 @@ header .logo:hover {
 }
 
 /* Wcięcie dla podkategorii */
-.sidebar li > ul {
+.aside li > ul {
     margin-left: 15px;
     padding-left: 5px;
 }
@@ -160,11 +178,6 @@ header .logo:hover {
 /* Ukrywanie kategorii */
 .hidden {
     display: none;
-}
-
-/* Animacja rozwijania */
-.sidebar ul li {
-    transition: all 0.3s ease;
 }
 
 /* Przyciski w sidebarze */
@@ -181,46 +194,17 @@ header .logo:hover {
     font-size: 1.2em;
 }
 
-/* Stylowanie przycisku na hover */
-.author-btn:hover {
-    background-color: #005bb5; /* Zmiana koloru tła na hover */
-}
-
-/* Utrzymanie przycisku na dole sidebaru */
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-}
-
-/* Utrzymanie przycisku na dole */
-.sidebar button:last-child {
-    margin-top: auto; /* Zajmuje pozostałą przestrzeń, przesuwając przycisk na dół */
-}
-
 /* Stopka */
-footer {
-    background-color: #242424;
-    color: white;
+
+.footer {
+    margin: 2em;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1050; /* Sidebar znajduje się nad treścią */
+    color: var(--color-gray);
+    font-size: smaller;
 }
 
-/* Stylizacja linków w stopce */
-footer a {
-    color: white; /* Kolor linku */
-    text-decoration: none; /* Usuń podkreślenie */
-    font-weight: bold; /* Pogrubienie tekstu */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Podkreślenie przy najechaniu */
-    color: #ddd; /* Zmiana koloru na jasnoszary */
+.footer__link {
+    color: var(--color-light-gray);
 }
 
 /* Sekcja map - Wyświetlanie jako lista */
@@ -300,19 +284,9 @@ footer a:hover {
     background-color: #218838;
 }
 
-/* Domyślnie sidebar może być zwijany */
-.sidebar.hidden {
-    transform: translateX(100%); /* Przesuwa sidebar poza ekran */
-}
-
 /* Na stronach związanych z mapami - blokujemy zwijanie */
-.maps-page .sidebar {
+.maps-page .aside {
     transform: translateX(0); /* Zatrzymujemy transformację, aby sidebar był zawsze widoczny */
-}
-
-/* Zmieniamy również ukrywanie na hover lub inne działania w sidebarze */
-.maps-page .sidebar.hidden {
-    display: block; /* Zatrzymuje animację zwijania na stronach z mapami */
 }
 
 /* Responsywność */
