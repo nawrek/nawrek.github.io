@@ -90,7 +90,7 @@ p {
 
 .navigation {
     margin: auto;
-    max-width: 62.5rem;
+    max-width: 61%;
 
     display: flex;
     flex-direction: row;
@@ -147,7 +147,7 @@ p {
 }
 
 #test {
-    width: 100%;
+    width: 180%;
 }
 
 .sidebar {
