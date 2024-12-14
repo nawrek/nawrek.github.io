@@ -129,7 +129,7 @@ p {
     column-gap: 2em;
     row-gap: 2em;
     
-    max-width: 62.5rem;
+    max-width: 60%;
     margin: auto;
 
     padding-left: var(--padding);
@@ -143,6 +143,10 @@ p {
 }
 
 .section--wide {
+    width: 100%;
+}
+
+#test {
     width: 100%;
 }
 
@@ -370,108 +374,5 @@ p {
 
     .navigation__separator {
         display: none;
-    }
-}
-/* Sekcja map - Wyświetlanie jako lista */
-.map-section {
-    display: flex;
-    flex-direction: column; /* Elementy układają się w kolumnie */
-    gap: 20px; /* Odstępy między mapkami */
-    margin-top: 20px;
-    padding: 0 15px; /* Dodatkowy padding dla lepszego wyglądu */
-    margin-bottom: 50px; /* Dodaj przestrzeń na dole sekcji map */
-}
-
-/* Pojedyncza mapa */
-.map-item {
-    background-color: #333;
-    color: white;
-    border-radius: 10px;
-    width: 85%; /* Rozciągnięcie na całą szerokość - sidebar */
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    align-items: flex-start; /* Ustawienie zawartości w jednej linii */
-    gap: 15px; /* Odstęp między obrazem a opisem */
-}
-
-/* Efekt hover na mapę */
-.map-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Obrazek mapy */
-.map-screenshot {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-    flex-shrink: 0; /* Zapobiega zmniejszaniu obrazu */
-}
-
-/* Szczegóły mapy */
-.map-details {
-    flex: 1; /* Rozciąga się na pozostałą przestrzeń */
-    margin: 5px;
-}
-
-.map-details h3 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-    color: #ffffff;
-    margin-top: -5px;
-}
-
-.map-details p {
-    font-size: 0.9em;
-    margin-bottom: 45px;
-    line-height: 1.4;
-    margin-top: 0px;
-}
-
-/* Przycisk pobierz */
-.map-details button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: auto; /* Wyrównanie do dołu */
-}
-
-/* Efekt hover na przycisk */
-.map-details button:hover {
-    background-color: #218838;
-}
-
-/* Domyślnie sidebar może być zwijany */
-.sidebar.hidden {
-    transform: translateX(100%); /* Przesuwa sidebar poza ekran */
-}
-
-/* Na stronach związanych z mapami - blokujemy zwijanie */
-.maps-page .sidebar {
-    transform: translateX(0); /* Zatrzymujemy transformację, aby sidebar był zawsze widoczny */
-}
-
-/* Zmieniamy również ukrywanie na hover lub inne działania w sidebarze */
-.maps-page .sidebar.hidden {
-    display: block; /* Zatrzymuje animację zwijania na stronach z mapami */
-}
-
-/* Responsywność */
-@media (max-width: 768px) {
-    .map-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .map-item {
-        width: 90%;
     }
 }
