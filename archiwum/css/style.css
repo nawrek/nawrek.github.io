@@ -152,7 +152,7 @@ p {
 
 .sidebar {
     color: white;
-    width: 600px;
+    width: 60%;
     padding: 15px;
     z-index: 1000; /* Sidebar znajduje się nad treścią */
 }
