@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft: Polskie Archiwum</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="keywords" content="minecraft, archiwum, polska, minecraft, archive, alpha, classic, beta">
+    <meta name="generator" content="mpa/home">
+    <meta name="description"
+        content="Archiwum starego Minecrafta.">
+    <meta name="author" content="nawrek">
+
+    <title>MPA - Strona główna</title>
+    <link rel="icon" href="/assets/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="/archiwum/css/style.css">
+    <script async src="/archiwum/js/script.js"></script>
 </head>
-<body class="home">
 
-<header>
-    <img src="css/minecraft_title.png" alt="Minecraft Archiwum: Polska" class="logo" onclick="window.location.href='https://nawrek.github.io/archiwum/index.html';">
-</header>
+<body>
+    <header class="navigation-container" aria-label="Górny pasek">
+        <nav aria-label="Nawigacja i logo" class="navigation">
+            <a class="navigation__home" href="/" title="Strona główna" aria-label="Przejdź do strony głównej">
+                <img class="navigation__logo" alt="Logo MPA"
+                    src="/archiwum/css/minecraft_title.png" height="48" width="248">
+            </a>
+            <div class="navigation__links navigation__links--start" aria-label="Nawigacja">
+                <a class="navigation__link navigation__link--white" href="/archiwum/mapy">O stronie</a>
+                <a class="navigation__link navigation__link--white" href="https://discord.gg/d4WvXeQ">Discord</a>
+            </div>
+        </nav>
+    </header>
 
-<!-- Sidebar po prawej stronie -->
-<div class="sidebar">
-    <h3><a href="texture_packi.html" class="download-link">Texture Packi</a></h3>
+    
+    
 
-    <h3 class="toggle-category">Mapy</h3>
-    <ul class="hidden">
-        <li><a href="escape.html" class="download-link">Minecraft Escape (Bremu)</a></li>
-        <li><a href="adventure.html" class="download-link">Adventure</a></li>
-        <li><a href="parkour.html" class="download-link">Parkour</a></li>
-        <li><a href="mapy_youtuberow.html" class="download-link">Mapy youtuberów</a></li>
-        <li><a href="survival.html" class="download-link">Survival</a></li>
-        <li><a href="minigames.html" class="download-link">Minigames</a></li>
-        <li><a href="inne.html" class="download-link">Inne mapy</a></li>
-    </ul>
+    
+    <main class="main" aria-label="Zawartość strony">
+        <section id="test" aria-label="O Minecraft: Polskie Archiwum">
+            <p>
+                Witaj! Jeśli tu jesteś, to oznacza to, że jesteś zainteresowany naszymi zbiorami starych map, texture packów i innych plików do gry Minecraft.
+                Celem tego projektu jest zachowanie wszelkiego rodzaju plików z wczesnych lat rozwoju Minecrafta i umożliwienie wszystkim ich przeglądanie.
+            </p>
+            <p>
+                Strona jest podzielona na następujące sekcje (możesz od razu przejść do podkategorii z użyciem bocznego menu):
+            </p>
+            <ul>
+                <li>
+                    <strong><a href="texture_packi.html" class="download-link">Texture Packi</a></strong>
+                </li>
+                <li>
+                    <strong><a href="mapy.html" class="download-link">Mapy</a></strong>
+                </li>
+                <li>
+                    <strong><a href="inne.html" class="download-link">Inne</a></strong>
+                </li>
+            </ul>
+            <p>
+                W sekcji <strong><a href="poszukiwane_mapy.html" class="download-link">poszukiwanych map</a></strong> możesz sprawdzić jakich map (narazie) brakuje w naszych zbiorach.
+            </p>
+            <p>
+                Serdeczne podziękowania dla youtubera Wafelq za rozpromowanie archiwum :D 
+            </p>
+        </section>
+        <aside class="sidebar">
+            <h3><a href="texture_packi.html" class="download-link">Texture Packi</a></h3>
 
-    <h3><a href="inne.html" class="download-link">Inne pliki</a></h3>
-
-    <h3><a href="poszukiwane_mapy.html" class="download-link">Poszukiwane mapy</a></h3>
-</div>
-
-<!-- Kontener z treścią strony -->
-<div class="container">
-    <h2>Witaj w Minecraft: Polskie Archiwum!</h2>
-    <p>
-        Witaj! Jeśli tu jesteś, to oznacza to, że jesteś zainteresowany naszymi zbiorami starych map, texture packów i innych plików do gry Minecraft.<br />
-        Celem tego projektu jest zachowanie wszelkiego rodzaju plików z wczesnych lat rozwoju Minecrafta i umożliwienie wszystkim ich przeglądanie.
-    </p>
-    <p>
-        Strona jest podzielona na następujące sekcje (możesz od razu przejść do podkategorii z użyciem bocznego menu):
-    </p>
-    <ul>
-        <li>
-            <strong><a href="texture_packi.html" class="download-link">Texture Packi</a></strong>
-        </li>
-        <li>
-            <strong><a href="mapy.html" class="download-link">Mapy</a></strong>
-        </li>
-        <li>
-            <strong><a href="inne.html" class="download-link">Inne</a></strong>
-        </li>
-    </ul>
-    <p>
-        W sekcji <strong><a href="poszukiwane_mapy.html" class="download-link">poszukiwanych map</a></strong> możesz sprawdzić jakich map (narazie) brakuje w naszych zbiorach.
-    </p>
-    <p>
-        Serdeczne podziękowania dla youtubera Wafelq za rozpromowanie archiwum :D 
-    </p>
-    <div align='center'>
-</div>
-<div class="hit-counter">
-    <a href='https://www.free-website-hit-counter.com'>
-        <img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=2375&s=1' border='0' alt='Free Website Hit Counter'>
-    </a><br /><small><a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free website hit counter</a></small></div>
-</div>
-<footer>
-    <p>
-        &copy; nawrek 2024 |
-        <a href="https://github.com/nawrek/nawrek.github.io/issues/new?assignees=&labels=&projects=&template=dodanie-mapy-do-archiwum.md&title=Prośba+o+dodanie+mapy+%28tu+podaj+nazwę+mapy%29" target="_blank">Masz własną mapę którą chcesz tu umieścić? Klikaj!</a>
-</footer>
-
-<script src="js/script.js"></script>
+            <h3 class="toggle-category">Mapy</h3>
+            <ul class="hidden">
+                <li><a href="escape.html" class="download-link">Minecraft Escape (Bremu)</a></li>
+                <li><a href="adventure.html" class="download-link">Adventure</a></li>
+                <li><a href="parkour.html" class="download-link">Parkour</a></li>
+                <li><a href="mapy_youtuberow.html" class="download-link">Mapy youtuberów</a></li>
+                <li><a href="survival.html" class="download-link">Survival</a></li>
+                <li><a href="minigames.html" class="download-link">Minigames</a></li>
+                <li><a href="inne.html" class="download-link">Inne mapy</a></li>
+            </ul>
+        
+            <h3><a href="inne.html" class="download-link">Inne pliki</a></h3>
+        
+            <h3><a href="poszukiwane_mapy.html" class="download-link">Poszukiwane mapy</a></h3>
+        </aside>
+    </main>
 </body>
+
 </html>
